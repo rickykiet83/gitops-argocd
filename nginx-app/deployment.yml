@@ -5,7 +5,7 @@ metadata:
     app: nginx
   name: nginx
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: nginx
@@ -19,5 +19,5 @@ spec:
       - image: nginx
         name: nginx
         imagePullPolicy: Always
-        ports: 
+        ports:
         - containerPort: 80
